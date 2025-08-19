@@ -5,7 +5,7 @@ import { cors } from 'hono/cors'
 
 const app = new Hono()
 app.use('*', cors({
-  origin: ["http://localhost:3000"]
+  origin: ["https://pj-4-app-zdgo.vercel.app", "http://localhost:3000"]
 }))
 
 app.route('/users', userRouter)
